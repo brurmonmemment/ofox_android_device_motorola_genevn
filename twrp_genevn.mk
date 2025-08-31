@@ -19,9 +19,6 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from genevn device
 $(call inherit-product, device/motorola/genevn/device.mk)
 
-# Inherit from OrangeFox
-$(call inherit-product, fox_genevn.mk)
-
 PRODUCT_DEVICE := genevn
 PRODUCT_NAME := twrp_genevn
 PRODUCT_BRAND := motorola
