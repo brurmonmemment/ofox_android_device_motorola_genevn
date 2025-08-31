@@ -19,11 +19,11 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from genevn device
 $(call inherit-product, device/motorola/genevn/device.mk)
 
-PRODUCT_DEVICE := genevn
-PRODUCT_NAME := twrp_genevn
+PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
+PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := motorola
+PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 PRODUCT_MODEL := motorola moto g stylus 5g (2023)
-PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
