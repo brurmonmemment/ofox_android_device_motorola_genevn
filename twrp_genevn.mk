@@ -19,6 +19,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from genevn device
 $(call inherit-product, device/motorola/genevn/device.mk)
 
+# Inherit from OrangeFox
+$(call inherit-product, fox_genevn.mk)
+
 PRODUCT_DEVICE := genevn
 PRODUCT_NAME := twrp_genevn
 PRODUCT_BRAND := motorola
@@ -31,4 +34,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=genevn_g \
     PRIVATE_BUILD_DESC="genevn_g-user 13 T1TGNS33.60-41-2-7 1b8716-5aa3a release-keys"
 BUILD_FINGERPRINT := motorola/genevn_g/genevn:13/T1TGNS33.60-41-2-7/1b8716-5aa3a:user/release-keys
-
